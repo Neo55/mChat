@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Meteor Chat App</title>
+    <title>Meteor Chat Application.</title>
 </head>
+
 <body>
-<h1>ChatApp</h1>
+<h1>Chat App</h1>
 {{> welcome }}
 {{> input }}
 {{> messages }}
@@ -13,12 +11,12 @@
 
 <template name="welcome">
     <p>
-        <p>Let's chat</p>
+        Let's chat.
     </p>
 </template>
 
 <template name="messages">
-    {{ #each messages }}
+    {{#each messages}}
     <strong>{{name}}:</strong> {{message}}<br>
     {{/each}}
 </template>
@@ -26,4 +24,3 @@
 <template name="input">
     <p>Message: <input type="text" id="message"></p>
 </template>
-</html>
